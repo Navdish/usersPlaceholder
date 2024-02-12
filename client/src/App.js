@@ -26,8 +26,8 @@ function App() {
   }
   return (
     <div className="App">
-      {users && users.map((user)=> {
-        return (<li key={user.id}>{user.name}</li>)
+      {users && users.map((user, id)=> {
+        return (<li key={id}>{user.name}</li>)
       })}
     </div>
   );

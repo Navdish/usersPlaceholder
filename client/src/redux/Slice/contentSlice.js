@@ -4,10 +4,7 @@ import axios from 'axios'
 export const fetchUser = createAsyncThunk(
     'user/fetchUser',
     async()=> {
-        console.log("....");
         const response = await axios.get('http://localhost:8080/users')
-        console.log("??")
-        console.log(response);
         const data = await response.data
         return data
     }
